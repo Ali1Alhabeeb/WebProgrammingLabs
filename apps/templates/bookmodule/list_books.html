@@ -4,8 +4,8 @@
 {% block content %}
 
  <h1>List of Books</h1>
- <a href="{% url 'books.view_one_book'%}"><h2>Internet & World Wide Web How to Program</h2></a>
- <a href="{% url 'books.view_one_book'%}"><img src="{% static 'book1.jpg' %}" alt="Book1 img desc" width="200"
+ <a href="{% url 'books.view_one_book' 123%}"><h2>Internet & World Wide Web How to Program</h2></a>
+ <a href="{% url 'books.view_one_book' 456 %}"><img src="{% static 'book1.jpg' %}" alt="Book1 img desc" width="200"
 height="200"></a>
  <hr>
  <h2> 2) C++ How to Program, Late Objects Version</h2>

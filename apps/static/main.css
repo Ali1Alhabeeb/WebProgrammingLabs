@@ -1,0 +1,108 @@
+.h1format {
+    background-color: #eef4d3; /* Light greenish background */
+    color: #2d660a; /* Dark green text */
+    font-weight: bold; /* Make it bold */
+    font-size: 24px; /* Increase font size */
+    padding: 10px; /* Add padding */
+    font-family: Arial, sans-serif; /* Use a clean font */
+    display: inline-block; /* Only take up necessary space */
+   }
+
+
+/* General link styling */
+.link {
+    display: block; /* Make links full-width */
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* First link - light green background */
+.new-tab {
+    background-color: #c6f7c4;
+    color: red;
+}
+
+/* Second link - dark gray background */
+.same-tab {
+    background-color: #4a4a4a;
+    color: gold;
+}
+
+/* Third link - black background */
+.dark {
+    background-color: black;
+    color: white;
+}
+
+/* Hover effect */
+.link:hover {
+    opacity: 0.7;
+}
+
+/* Visited link */
+.link:visited {
+    color: purple;
+}
+
+/* Active (clicked) link */
+.link:active {
+    color: blue;
+}
+
+/* Styling for the header */
+.header {
+    background-color: #5f8c8c; /* Match the image */
+    padding: 15px;
+    text-align: left;
+}
+
+.header h1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* List styling */
+ul {
+    font-size: 18px;
+}
+
+ul, ol {
+    margin-left: 25px;
+}
+
+/* Nested lists */
+ul ul, ul ol {
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+/* Ordered list */
+ol {
+    list-style-type: decimal;
+}
+
+/* Unordered list */
+ul {
+    list-style-type: disc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}

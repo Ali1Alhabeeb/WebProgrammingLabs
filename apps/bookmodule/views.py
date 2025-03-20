@@ -16,6 +16,17 @@ def viewbook(request, bookId):
 def aboutus(request):
     return render(request, 'bookmodule/aboutus.html')
 
+def linkspage(request):
+    return render(request,'html5/links.html')
+
+def formatting(request):
+    return render(request,'html5/formatting.html')
+
+def listing(request):
+    return render(request,'html5/listing.html')
+
+def tables(request):
+    return render(request,'html5/tables.html')
 
 def viewbook(request, bookId):
 # assume that we have the following books somewhere (e.g. database)
