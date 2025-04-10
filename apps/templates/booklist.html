@@ -1,0 +1,36 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %} search result {% endblock title %}
+{% block stylesheets %}
+<style>
+        table, td, th {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 5px;
+        }
+
+
+</style>
+{% endblock stylesheets %}
+{% block content %}
+    {% if books %}
+        <table>
+            <thead>
+                <th> ID </th>
+                <th> Title </th>
+                <th> Author </th>
+            </thead>
+            <tbody>
+                {% for book in books %}
+                <tr>
+                    <td>{{book.id}}</td>
+                    <td>{{book.title}}</td>
+                    <td>{{book.author}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+    <h1>No books available</h1>
+    {% endif %}
+{% endblock content %}
