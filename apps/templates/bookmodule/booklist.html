@@ -13,9 +13,28 @@
 </style>
 {% endblock stylesheets %}
 {% block content %}
-    
-{% for obj in books %}
-     ID: {{obj.id}}, Title: {{obj.title}}
-     <hr>
- {% endfor %}
+<table>
+        <thead>
+                <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Price</th>
+                        <th>Edition</th>
+                </tr>
+        </thead>
+        <tbody>
+                {% for obj in books %}
+                {% if obj.id > 0 %}
+                <tr>
+                <th>{{obj.id}} </th>
+                <th>{{obj.title}} </th>
+                <th>{{obj.author}} </th>
+                <th>{{obj.price}} </th>
+                <th>{{obj.edition}} </th>
+                </tr>
+                {%endif %}
+                {% endfor %}
+        </tbody>
+</table>
     {% endblock content %}

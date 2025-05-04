@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %} search result {% endblock title %}
+{% block stylesheets %}
+<style>
+        table, td, th {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 5px;
+        }
+
+
+</style>
+{% endblock stylesheets %}
+{% block content %}
+
+
+ 
+
+ <table>
+     <tr>
+         <th>city</th>
+         <th>Num of Students</th>
+     </tr>
+     {% for city in cities %}
+     <tr>
+         <td>{{ city.city }}</td>
+         <td>{{ city.student_count }}</td>
+     </tr>
+     {% endfor %}
+ </table>
+ {% endblock content %} 
