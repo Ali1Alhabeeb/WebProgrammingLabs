@@ -1,0 +1,65 @@
+{% extends "layouts/base.html" %} 
+{% load static %} 
+
+{% block title %} Task 2 Page {% endblock title %} 
+
+{% block stylesheets %}
+
+<style>
+    h1 {
+        background-color: pink; 
+        color: white;
+        padding: 15px;
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        margin-top: 0;
+        font-family: Times New Roman;
+    }
+
+    table {
+        width: 20%;
+        margin: 20px auto;
+        font-size: 1em;
+        font-family: Times New Roman;
+        text-align: center;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th {
+        background-color: pink;
+        padding: 10px;
+        font-weight: bold;
+    }
+
+    td {
+        padding: 8px;
+    }
+
+    caption {
+        font-size: 1.2em;
+        margin: 10px;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+<table>
+    <tr>
+        <th>Course</th>
+        <th>Number of Students</th>
+    </tr>
+    {% for course in courses %}
+    <tr>
+        <td>{{ course.title }}</td>
+        <td>{{ course.student_count }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock content %}
